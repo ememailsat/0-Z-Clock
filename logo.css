@@ -1,0 +1,652 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(45deg, black, red); }
+
+#dLogo {
+  position: absolute;
+  left: 412px;
+  top: 191px;
+  z-index: 999999999999; }
+
+#cube {
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 100px;
+  height: 100px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 55s ease-in-out; }
+  #cube .plane {
+    transition: all 5s ease-in-out;
+    background: rgba(170, 4, 4, 0.1);
+    perspective: 800px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    border-radius: 51%; }
+
+#cube > .plane:nth-child(2n + 1) {
+  transition: all 0.1s linear;
+  transition-delay: 0.1s;
+  transform: scale(0.5, 0.5) rotateX(4deg) rotateY(8deg) rotateZ(12deg); }
+
+#cube > .plane:nth-child(2n + 2) {
+  transition: all 0.2s linear;
+  transition-delay: 0.2s;
+  transform: scale(0.5, 0.5) rotateX(8deg) rotateY(16deg) rotateZ(24deg); }
+
+#cube > .plane:nth-child(2n + 3) {
+  transition: all 0.3s linear;
+  transition-delay: 0.3s;
+  transform: scale(0.5, 0.5) rotateX(12deg) rotateY(24deg) rotateZ(36deg); }
+
+#cube > .plane:nth-child(2n + 4) {
+  transition: all 0.4s linear;
+  transition-delay: 0.4s;
+  transform: scale(0.5, 0.5) rotateX(16deg) rotateY(32deg) rotateZ(48deg); }
+
+#cube > .plane:nth-child(2n + 5) {
+  transition: all 0.5s linear;
+  transition-delay: 0.5s;
+  transform: scale(0.5, 0.5) rotateX(20deg) rotateY(40deg) rotateZ(60deg); }
+
+#cube > .plane:nth-child(2n + 6) {
+  transition: all 0.6s linear;
+  transition-delay: 0.6s;
+  transform: scale(0.5, 0.5) rotateX(24deg) rotateY(48deg) rotateZ(72deg); }
+
+#cube > .plane:nth-child(2n + 7) {
+  transition: all 0.7s linear;
+  transition-delay: 0.7s;
+  transform: scale(0.5, 0.5) rotateX(28deg) rotateY(56deg) rotateZ(84deg); }
+
+#cube > .plane:nth-child(2n + 8) {
+  transition: all 0.8s linear;
+  transition-delay: 0.8s;
+  transform: scale(0.5, 0.5) rotateX(32deg) rotateY(64deg) rotateZ(96deg); }
+
+#cube > .plane:nth-child(2n + 9) {
+  transition: all 0.9s linear;
+  transition-delay: 0.9s;
+  transform: scale(0.5, 0.5) rotateX(36deg) rotateY(72deg) rotateZ(108deg); }
+
+#cube > .plane:nth-child(2n + 10) {
+  transition: all 1s linear;
+  transition-delay: 1s;
+  transform: scale(0.5, 0.5) rotateX(40deg) rotateY(80deg) rotateZ(120deg); }
+
+#cube > .plane:nth-child(2n + 11) {
+  transition: all 1.1s linear;
+  transition-delay: 1.1s;
+  transform: scale(0.5, 0.5) rotateX(44deg) rotateY(88deg) rotateZ(132deg); }
+
+#cube > .plane:nth-child(2n + 12) {
+  transition: all 1.2s linear;
+  transition-delay: 1.2s;
+  transform: scale(0.5, 0.5) rotateX(48deg) rotateY(96deg) rotateZ(144deg); }
+
+#cube > .plane:nth-child(2n + 13) {
+  transition: all 1.3s linear;
+  transition-delay: 1.3s;
+  transform: scale(0.5, 0.5) rotateX(52deg) rotateY(104deg) rotateZ(156deg); }
+
+#cube > .plane:nth-child(2n + 14) {
+  transition: all 1.4s linear;
+  transition-delay: 1.4s;
+  transform: scale(0.5, 0.5) rotateX(56deg) rotateY(112deg) rotateZ(168deg); }
+
+#cube > .plane:nth-child(2n + 15) {
+  transition: all 1.5s linear;
+  transition-delay: 1.5s;
+  transform: scale(0.5, 0.5) rotateX(60deg) rotateY(120deg) rotateZ(180deg); }
+
+#cube > .plane:nth-child(2n + 16) {
+  transition: all 1.6s linear;
+  transition-delay: 1.6s;
+  transform: scale(0.5, 0.5) rotateX(64deg) rotateY(128deg) rotateZ(192deg); }
+
+#cube > .plane:nth-child(2n + 17) {
+  transition: all 1.7s linear;
+  transition-delay: 1.7s;
+  transform: scale(0.5, 0.5) rotateX(68deg) rotateY(136deg) rotateZ(204deg); }
+
+#cube > .plane:nth-child(2n + 18) {
+  transition: all 1.8s linear;
+  transition-delay: 1.8s;
+  transform: scale(0.5, 0.5) rotateX(72deg) rotateY(144deg) rotateZ(216deg); }
+
+#cube > .plane:nth-child(2n + 19) {
+  transition: all 1.9s linear;
+  transition-delay: 1.9s;
+  transform: scale(0.5, 0.5) rotateX(76deg) rotateY(152deg) rotateZ(228deg); }
+
+#cube > .plane:nth-child(2n + 20) {
+  transition: all 2s linear;
+  transition-delay: 2s;
+  transform: scale(0.5, 0.5) rotateX(80deg) rotateY(160deg) rotateZ(240deg); }
+
+#cube > .plane:nth-child(2n + 21) {
+  transition: all 2.1s linear;
+  transition-delay: 2.1s;
+  transform: scale(0.5, 0.5) rotateX(84deg) rotateY(168deg) rotateZ(252deg); }
+
+#cube > .plane:nth-child(2n + 22) {
+  transition: all 2.2s linear;
+  transition-delay: 2.2s;
+  transform: scale(0.5, 0.5) rotateX(88deg) rotateY(176deg) rotateZ(264deg); }
+
+#cube > .plane:nth-child(2n + 23) {
+  transition: all 2.3s linear;
+  transition-delay: 2.3s;
+  transform: scale(0.5, 0.5) rotateX(92deg) rotateY(184deg) rotateZ(276deg); }
+
+#cube > .plane:nth-child(2n + 24) {
+  transition: all 2.4s linear;
+  transition-delay: 2.4s;
+  transform: scale(0.5, 0.5) rotateX(96deg) rotateY(192deg) rotateZ(288deg); }
+
+#cube > .plane:nth-child(2n + 25) {
+  transition: all 2.5s linear;
+  transition-delay: 2.5s;
+  transform: scale(0.5, 0.5) rotateX(100deg) rotateY(200deg) rotateZ(300deg); }
+
+#cube > .plane:nth-child(2n + 26) {
+  transition: all 2.6s linear;
+  transition-delay: 2.6s;
+  transform: scale(0.5, 0.5) rotateX(104deg) rotateY(208deg) rotateZ(312deg); }
+
+#cube > .plane:nth-child(2n + 27) {
+  transition: all 2.7s linear;
+  transition-delay: 2.7s;
+  transform: scale(0.5, 0.5) rotateX(108deg) rotateY(216deg) rotateZ(324deg); }
+
+#cube > .plane:nth-child(2n + 28) {
+  transition: all 2.8s linear;
+  transition-delay: 2.8s;
+  transform: scale(0.5, 0.5) rotateX(112deg) rotateY(224deg) rotateZ(336deg); }
+
+#cube > .plane:nth-child(2n + 29) {
+  transition: all 2.9s linear;
+  transition-delay: 2.9s;
+  transform: scale(0.5, 0.5) rotateX(116deg) rotateY(232deg) rotateZ(348deg); }
+
+#cube > .plane:nth-child(2n + 30) {
+  transition: all 3s linear;
+  transition-delay: 3s;
+  transform: scale(0.5, 0.5) rotateX(120deg) rotateY(240deg) rotateZ(360deg); }
+
+#cube > .plane:nth-child(2n + 31) {
+  transition: all 3.1s linear;
+  transition-delay: 3.1s;
+  transform: scale(0.5, 0.5) rotateX(124deg) rotateY(248deg) rotateZ(372deg); }
+
+#cube > .plane:nth-child(2n + 32) {
+  transition: all 3.2s linear;
+  transition-delay: 3.2s;
+  transform: scale(0.5, 0.5) rotateX(128deg) rotateY(256deg) rotateZ(384deg); }
+
+#cube > .plane:nth-child(2n + 33) {
+  transition: all 3.3s linear;
+  transition-delay: 3.3s;
+  transform: scale(0.5, 0.5) rotateX(132deg) rotateY(264deg) rotateZ(396deg); }
+
+#cube > .plane:nth-child(2n + 34) {
+  transition: all 3.4s linear;
+  transition-delay: 3.4s;
+  transform: scale(0.5, 0.5) rotateX(136deg) rotateY(272deg) rotateZ(408deg); }
+
+#cube > .plane:nth-child(2n + 35) {
+  transition: all 3.5s linear;
+  transition-delay: 3.5s;
+  transform: scale(0.5, 0.5) rotateX(140deg) rotateY(280deg) rotateZ(420deg); }
+
+#cube > .plane:nth-child(2n + 36) {
+  transition: all 3.6s linear;
+  transition-delay: 3.6s;
+  transform: scale(0.5, 0.5) rotateX(144deg) rotateY(288deg) rotateZ(432deg); }
+
+#cube > .plane:nth-child(2n + 37) {
+  transition: all 3.7s linear;
+  transition-delay: 3.7s;
+  transform: scale(0.5, 0.5) rotateX(148deg) rotateY(296deg) rotateZ(444deg); }
+
+#cube > .plane:nth-child(2n + 38) {
+  transition: all 3.8s linear;
+  transition-delay: 3.8s;
+  transform: scale(0.5, 0.5) rotateX(152deg) rotateY(304deg) rotateZ(456deg); }
+
+#cube > .plane:nth-child(2n + 39) {
+  transition: all 3.9s linear;
+  transition-delay: 3.9s;
+  transform: scale(0.5, 0.5) rotateX(156deg) rotateY(312deg) rotateZ(468deg); }
+
+#cube > .plane:nth-child(2n + 40) {
+  transition: all 4s linear;
+  transition-delay: 4s;
+  transform: scale(0.5, 0.5) rotateX(160deg) rotateY(320deg) rotateZ(480deg); }
+
+#cube > .plane:nth-child(2n + 41) {
+  transition: all 4.1s linear;
+  transition-delay: 4.1s;
+  transform: scale(0.5, 0.5) rotateX(164deg) rotateY(328deg) rotateZ(492deg); }
+
+#cube > .plane:nth-child(2n + 42) {
+  transition: all 4.2s linear;
+  transition-delay: 4.2s;
+  transform: scale(0.5, 0.5) rotateX(168deg) rotateY(336deg) rotateZ(504deg); }
+
+#cube > .plane:nth-child(2n + 43) {
+  transition: all 4.3s linear;
+  transition-delay: 4.3s;
+  transform: scale(0.5, 0.5) rotateX(172deg) rotateY(344deg) rotateZ(516deg); }
+
+#cube > .plane:nth-child(2n + 44) {
+  transition: all 4.4s linear;
+  transition-delay: 4.4s;
+  transform: scale(0.5, 0.5) rotateX(176deg) rotateY(352deg) rotateZ(528deg); }
+
+#cube > .plane:nth-child(2n + 45) {
+  transition: all 4.5s linear;
+  transition-delay: 4.5s;
+  transform: scale(0.5, 0.5) rotateX(180deg) rotateY(360deg) rotateZ(540deg); }
+
+#cube > .plane:nth-child(2n + 46) {
+  transition: all 4.6s linear;
+  transition-delay: 4.6s;
+  transform: scale(0.5, 0.5) rotateX(184deg) rotateY(368deg) rotateZ(552deg); }
+
+#cube > .plane:nth-child(2n + 47) {
+  transition: all 4.7s linear;
+  transition-delay: 4.7s;
+  transform: scale(0.5, 0.5) rotateX(188deg) rotateY(376deg) rotateZ(564deg); }
+
+#cube > .plane:nth-child(2n + 48) {
+  transition: all 4.8s linear;
+  transition-delay: 4.8s;
+  transform: scale(0.5, 0.5) rotateX(192deg) rotateY(384deg) rotateZ(576deg); }
+
+#cube > .plane:nth-child(2n + 49) {
+  transition: all 4.9s linear;
+  transition-delay: 4.9s;
+  transform: scale(0.5, 0.5) rotateX(196deg) rotateY(392deg) rotateZ(588deg); }
+
+#cube > .plane:nth-child(2n + 50) {
+  transition: all 5s linear;
+  transition-delay: 5s;
+  transform: scale(0.5, 0.5) rotateX(200deg) rotateY(400deg) rotateZ(600deg); }
+
+#cube > .plane:nth-child(2n + 51) {
+  transition: all 5.1s linear;
+  transition-delay: 5.1s;
+  transform: scale(0.5, 0.5) rotateX(204deg) rotateY(408deg) rotateZ(612deg); }
+
+#cube > .plane:nth-child(2n + 52) {
+  transition: all 5.2s linear;
+  transition-delay: 5.2s;
+  transform: scale(0.5, 0.5) rotateX(208deg) rotateY(416deg) rotateZ(624deg); }
+
+#cube > .plane:nth-child(2n + 53) {
+  transition: all 5.3s linear;
+  transition-delay: 5.3s;
+  transform: scale(0.5, 0.5) rotateX(212deg) rotateY(424deg) rotateZ(636deg); }
+
+#cube > .plane:nth-child(2n + 54) {
+  transition: all 5.4s linear;
+  transition-delay: 5.4s;
+  transform: scale(0.5, 0.5) rotateX(216deg) rotateY(432deg) rotateZ(648deg); }
+
+#cube > .plane:nth-child(2n + 55) {
+  transition: all 5.5s linear;
+  transition-delay: 5.5s;
+  transform: scale(0.5, 0.5) rotateX(220deg) rotateY(440deg) rotateZ(660deg); }
+
+#cube > .plane:nth-child(2n + 56) {
+  transition: all 5.6s linear;
+  transition-delay: 5.6s;
+  transform: scale(0.5, 0.5) rotateX(224deg) rotateY(448deg) rotateZ(672deg); }
+
+#cube > .plane:nth-child(2n + 57) {
+  transition: all 5.7s linear;
+  transition-delay: 5.7s;
+  transform: scale(0.5, 0.5) rotateX(228deg) rotateY(456deg) rotateZ(684deg); }
+
+#cube > .plane:nth-child(2n + 58) {
+  transition: all 5.8s linear;
+  transition-delay: 5.8s;
+  transform: scale(0.5, 0.5) rotateX(232deg) rotateY(464deg) rotateZ(696deg); }
+
+#cube > .plane:nth-child(2n + 59) {
+  transition: all 5.9s linear;
+  transition-delay: 5.9s;
+  transform: scale(0.5, 0.5) rotateX(236deg) rotateY(472deg) rotateZ(708deg); }
+
+#cube > .plane:nth-child(2n + 60) {
+  transition: all 6s linear;
+  transition-delay: 6s;
+  transform: scale(0.5, 0.5) rotateX(240deg) rotateY(480deg) rotateZ(720deg); }
+
+#cube > .plane:nth-child(2n + 61) {
+  transition: all 6.1s linear;
+  transition-delay: 6.1s;
+  transform: scale(0.5, 0.5) rotateX(244deg) rotateY(488deg) rotateZ(732deg); }
+
+#cube > .plane:nth-child(2n + 62) {
+  transition: all 6.2s linear;
+  transition-delay: 6.2s;
+  transform: scale(0.5, 0.5) rotateX(248deg) rotateY(496deg) rotateZ(744deg); }
+
+#cube:hover > .plane:nth-child(2n + 1) {
+  transition: all 0.1s linear;
+  transition-delay: 0.1s;
+  transform: scale(0.03, 0.03) rotateX(-16deg) rotateY(-32deg) rotateZ(-48deg); }
+
+#cube:hover > .plane:nth-child(2n + 2) {
+  transition: all 0.2s linear;
+  transition-delay: 0.2s;
+  transform: scale(0.06, 0.06) rotateX(-32deg) rotateY(-64deg) rotateZ(-96deg); }
+
+#cube:hover > .plane:nth-child(2n + 3) {
+  transition: all 0.3s linear;
+  transition-delay: 0.3s;
+  transform: scale(0.09, 0.09) rotateX(-48deg) rotateY(-96deg) rotateZ(-144deg); }
+
+#cube:hover > .plane:nth-child(2n + 4) {
+  transition: all 0.4s linear;
+  transition-delay: 0.4s;
+  transform: scale(0.12, 0.12) rotateX(-64deg) rotateY(-128deg) rotateZ(-192deg); }
+
+#cube:hover > .plane:nth-child(2n + 5) {
+  transition: all 0.5s linear;
+  transition-delay: 0.5s;
+  transform: scale(0.15, 0.15) rotateX(-80deg) rotateY(-160deg) rotateZ(-240deg); }
+
+#cube:hover > .plane:nth-child(2n + 6) {
+  transition: all 0.6s linear;
+  transition-delay: 0.6s;
+  transform: scale(0.18, 0.18) rotateX(-96deg) rotateY(-192deg) rotateZ(-288deg); }
+
+#cube:hover > .plane:nth-child(2n + 7) {
+  transition: all 0.7s linear;
+  transition-delay: 0.7s;
+  transform: scale(0.21, 0.21) rotateX(-112deg) rotateY(-224deg) rotateZ(-336deg); }
+
+#cube:hover > .plane:nth-child(2n + 8) {
+  transition: all 0.8s linear;
+  transition-delay: 0.8s;
+  transform: scale(0.24, 0.24) rotateX(-128deg) rotateY(-256deg) rotateZ(-384deg); }
+
+#cube:hover > .plane:nth-child(2n + 9) {
+  transition: all 0.9s linear;
+  transition-delay: 0.9s;
+  transform: scale(0.27, 0.27) rotateX(-144deg) rotateY(-288deg) rotateZ(-432deg); }
+
+#cube:hover > .plane:nth-child(2n + 10) {
+  transition: all 1s linear;
+  transition-delay: 1s;
+  transform: scale(0.3, 0.3) rotateX(-160deg) rotateY(-320deg) rotateZ(-480deg); }
+
+#cube:hover > .plane:nth-child(2n + 11) {
+  transition: all 1.1s linear;
+  transition-delay: 1.1s;
+  transform: scale(0.33, 0.33) rotateX(-176deg) rotateY(-352deg) rotateZ(-528deg); }
+
+#cube:hover > .plane:nth-child(2n + 12) {
+  transition: all 1.2s linear;
+  transition-delay: 1.2s;
+  transform: scale(0.36, 0.36) rotateX(-192deg) rotateY(-384deg) rotateZ(-576deg); }
+
+#cube:hover > .plane:nth-child(2n + 13) {
+  transition: all 1.3s linear;
+  transition-delay: 1.3s;
+  transform: scale(0.39, 0.39) rotateX(-208deg) rotateY(-416deg) rotateZ(-624deg); }
+
+#cube:hover > .plane:nth-child(2n + 14) {
+  transition: all 1.4s linear;
+  transition-delay: 1.4s;
+  transform: scale(0.42, 0.42) rotateX(-224deg) rotateY(-448deg) rotateZ(-672deg); }
+
+#cube:hover > .plane:nth-child(2n + 15) {
+  transition: all 1.5s linear;
+  transition-delay: 1.5s;
+  transform: scale(0.45, 0.45) rotateX(-240deg) rotateY(-480deg) rotateZ(-720deg); }
+
+#cube:hover > .plane:nth-child(2n + 16) {
+  transition: all 1.6s linear;
+  transition-delay: 1.6s;
+  transform: scale(0.48, 0.48) rotateX(-256deg) rotateY(-512deg) rotateZ(-768deg); }
+
+#cube:hover > .plane:nth-child(2n + 17) {
+  transition: all 1.7s linear;
+  transition-delay: 1.7s;
+  transform: scale(0.51, 0.51) rotateX(-272deg) rotateY(-544deg) rotateZ(-816deg); }
+
+#cube:hover > .plane:nth-child(2n + 18) {
+  transition: all 1.8s linear;
+  transition-delay: 1.8s;
+  transform: scale(0.54, 0.54) rotateX(-288deg) rotateY(-576deg) rotateZ(-864deg); }
+
+#cube:hover > .plane:nth-child(2n + 19) {
+  transition: all 1.9s linear;
+  transition-delay: 1.9s;
+  transform: scale(0.57, 0.57) rotateX(-304deg) rotateY(-608deg) rotateZ(-912deg); }
+
+#cube:hover > .plane:nth-child(2n + 20) {
+  transition: all 2s linear;
+  transition-delay: 2s;
+  transform: scale(0.6, 0.6) rotateX(-320deg) rotateY(-640deg) rotateZ(-960deg); }
+
+#cube:hover > .plane:nth-child(2n + 21) {
+  transition: all 2.1s linear;
+  transition-delay: 2.1s;
+  transform: scale(0.63, 0.63) rotateX(-336deg) rotateY(-672deg) rotateZ(-1008deg); }
+
+#cube:hover > .plane:nth-child(2n + 22) {
+  transition: all 2.2s linear;
+  transition-delay: 2.2s;
+  transform: scale(0.66, 0.66) rotateX(-352deg) rotateY(-704deg) rotateZ(-1056deg); }
+
+#cube:hover > .plane:nth-child(2n + 23) {
+  transition: all 2.3s linear;
+  transition-delay: 2.3s;
+  transform: scale(0.69, 0.69) rotateX(-368deg) rotateY(-736deg) rotateZ(-1104deg); }
+
+#cube:hover > .plane:nth-child(2n + 24) {
+  transition: all 2.4s linear;
+  transition-delay: 2.4s;
+  transform: scale(0.72, 0.72) rotateX(-384deg) rotateY(-768deg) rotateZ(-1152deg); }
+
+#cube:hover > .plane:nth-child(2n + 25) {
+  transition: all 2.5s linear;
+  transition-delay: 2.5s;
+  transform: scale(0.75, 0.75) rotateX(-400deg) rotateY(-800deg) rotateZ(-1200deg); }
+
+#cube:hover > .plane:nth-child(2n + 26) {
+  transition: all 2.6s linear;
+  transition-delay: 2.6s;
+  transform: scale(0.78, 0.78) rotateX(-416deg) rotateY(-832deg) rotateZ(-1248deg); }
+
+#cube:hover > .plane:nth-child(2n + 27) {
+  transition: all 2.7s linear;
+  transition-delay: 2.7s;
+  transform: scale(0.81, 0.81) rotateX(-432deg) rotateY(-864deg) rotateZ(-1296deg); }
+
+#cube:hover > .plane:nth-child(2n + 28) {
+  transition: all 2.8s linear;
+  transition-delay: 2.8s;
+  transform: scale(0.84, 0.84) rotateX(-448deg) rotateY(-896deg) rotateZ(-1344deg); }
+
+#cube:hover > .plane:nth-child(2n + 29) {
+  transition: all 2.9s linear;
+  transition-delay: 2.9s;
+  transform: scale(0.87, 0.87) rotateX(-464deg) rotateY(-928deg) rotateZ(-1392deg); }
+
+#cube:hover > .plane:nth-child(2n + 30) {
+  transition: all 3s linear;
+  transition-delay: 3s;
+  transform: scale(0.9, 0.9) rotateX(-480deg) rotateY(-960deg) rotateZ(-1440deg); }
+
+#cube:hover > .plane:nth-child(2n + 31) {
+  transition: all 3.1s linear;
+  transition-delay: 3.1s;
+  transform: scale(0.93, 0.93) rotateX(-496deg) rotateY(-992deg) rotateZ(-1488deg); }
+
+#cube:hover > .plane:nth-child(2n + 32) {
+  transition: all 3.2s linear;
+  transition-delay: 3.2s;
+  transform: scale(0.96, 0.96) rotateX(-512deg) rotateY(-1024deg) rotateZ(-1536deg); }
+
+#cube:hover > .plane:nth-child(2n + 33) {
+  transition: all 3.3s linear;
+  transition-delay: 3.3s;
+  transform: scale(0.99, 0.99) rotateX(-528deg) rotateY(-1056deg) rotateZ(-1584deg); }
+
+#cube:hover > .plane:nth-child(2n + 34) {
+  transition: all 3.4s linear;
+  transition-delay: 3.4s;
+  transform: scale(1.02, 1.02) rotateX(-544deg) rotateY(-1088deg) rotateZ(-1632deg); }
+
+#cube:hover > .plane:nth-child(2n + 35) {
+  transition: all 3.5s linear;
+  transition-delay: 3.5s;
+  transform: scale(1.05, 1.05) rotateX(-560deg) rotateY(-1120deg) rotateZ(-1680deg); }
+
+#cube:hover > .plane:nth-child(2n + 36) {
+  transition: all 3.6s linear;
+  transition-delay: 3.6s;
+  transform: scale(1.08, 1.08) rotateX(-576deg) rotateY(-1152deg) rotateZ(-1728deg); }
+
+#cube:hover > .plane:nth-child(2n + 37) {
+  transition: all 3.7s linear;
+  transition-delay: 3.7s;
+  transform: scale(1.11, 1.11) rotateX(-592deg) rotateY(-1184deg) rotateZ(-1776deg); }
+
+#cube:hover > .plane:nth-child(2n + 38) {
+  transition: all 3.8s linear;
+  transition-delay: 3.8s;
+  transform: scale(1.14, 1.14) rotateX(-608deg) rotateY(-1216deg) rotateZ(-1824deg); }
+
+#cube:hover > .plane:nth-child(2n + 39) {
+  transition: all 3.9s linear;
+  transition-delay: 3.9s;
+  transform: scale(1.17, 1.17) rotateX(-624deg) rotateY(-1248deg) rotateZ(-1872deg); }
+
+#cube:hover > .plane:nth-child(2n + 40) {
+  transition: all 4s linear;
+  transition-delay: 4s;
+  transform: scale(1.2, 1.2) rotateX(-640deg) rotateY(-1280deg) rotateZ(-1920deg); }
+
+#cube:hover > .plane:nth-child(2n + 41) {
+  transition: all 4.1s linear;
+  transition-delay: 4.1s;
+  transform: scale(1.23, 1.23) rotateX(-656deg) rotateY(-1312deg) rotateZ(-1968deg); }
+
+#cube:hover > .plane:nth-child(2n + 42) {
+  transition: all 4.2s linear;
+  transition-delay: 4.2s;
+  transform: scale(1.26, 1.26) rotateX(-672deg) rotateY(-1344deg) rotateZ(-2016deg); }
+
+#cube:hover > .plane:nth-child(2n + 43) {
+  transition: all 4.3s linear;
+  transition-delay: 4.3s;
+  transform: scale(1.29, 1.29) rotateX(-688deg) rotateY(-1376deg) rotateZ(-2064deg); }
+
+#cube:hover > .plane:nth-child(2n + 44) {
+  transition: all 4.4s linear;
+  transition-delay: 4.4s;
+  transform: scale(1.32, 1.32) rotateX(-704deg) rotateY(-1408deg) rotateZ(-2112deg); }
+
+#cube:hover > .plane:nth-child(2n + 45) {
+  transition: all 4.5s linear;
+  transition-delay: 4.5s;
+  transform: scale(1.35, 1.35) rotateX(-720deg) rotateY(-1440deg) rotateZ(-2160deg); }
+
+#cube:hover > .plane:nth-child(2n + 46) {
+  transition: all 4.6s linear;
+  transition-delay: 4.6s;
+  transform: scale(1.38, 1.38) rotateX(-736deg) rotateY(-1472deg) rotateZ(-2208deg); }
+
+#cube:hover > .plane:nth-child(2n + 47) {
+  transition: all 4.7s linear;
+  transition-delay: 4.7s;
+  transform: scale(1.41, 1.41) rotateX(-752deg) rotateY(-1504deg) rotateZ(-2256deg); }
+
+#cube:hover > .plane:nth-child(2n + 48) {
+  transition: all 4.8s linear;
+  transition-delay: 4.8s;
+  transform: scale(1.44, 1.44) rotateX(-768deg) rotateY(-1536deg) rotateZ(-2304deg); }
+
+#cube:hover > .plane:nth-child(2n + 49) {
+  transition: all 4.9s linear;
+  transition-delay: 4.9s;
+  transform: scale(1.47, 1.47) rotateX(-784deg) rotateY(-1568deg) rotateZ(-2352deg); }
+
+#cube:hover > .plane:nth-child(2n + 50) {
+  transition: all 5s linear;
+  transition-delay: 5s;
+  transform: scale(1.5, 1.5) rotateX(-800deg) rotateY(-1600deg) rotateZ(-2400deg); }
+
+#cube:hover > .plane:nth-child(2n + 51) {
+  transition: all 5.1s linear;
+  transition-delay: 5.1s;
+  transform: scale(1.53, 1.53) rotateX(-816deg) rotateY(-1632deg) rotateZ(-2448deg); }
+
+#cube:hover > .plane:nth-child(2n + 52) {
+  transition: all 5.2s linear;
+  transition-delay: 5.2s;
+  transform: scale(1.56, 1.56) rotateX(-832deg) rotateY(-1664deg) rotateZ(-2496deg); }
+
+#cube:hover > .plane:nth-child(2n + 53) {
+  transition: all 5.3s linear;
+  transition-delay: 5.3s;
+  transform: scale(1.59, 1.59) rotateX(-848deg) rotateY(-1696deg) rotateZ(-2544deg); }
+
+#cube:hover > .plane:nth-child(2n + 54) {
+  transition: all 5.4s linear;
+  transition-delay: 5.4s;
+  transform: scale(1.62, 1.62) rotateX(-864deg) rotateY(-1728deg) rotateZ(-2592deg); }
+
+#cube:hover > .plane:nth-child(2n + 55) {
+  transition: all 5.5s linear;
+  transition-delay: 5.5s;
+  transform: scale(1.65, 1.65) rotateX(-880deg) rotateY(-1760deg) rotateZ(-2640deg); }
+
+#cube:hover > .plane:nth-child(2n + 56) {
+  transition: all 5.6s linear;
+  transition-delay: 5.6s;
+  transform: scale(1.68, 1.68) rotateX(-896deg) rotateY(-1792deg) rotateZ(-2688deg); }
+
+#cube:hover > .plane:nth-child(2n + 57) {
+  transition: all 5.7s linear;
+  transition-delay: 5.7s;
+  transform: scale(1.71, 1.71) rotateX(-912deg) rotateY(-1824deg) rotateZ(-2736deg); }
+
+#cube:hover > .plane:nth-child(2n + 58) {
+  transition: all 5.8s linear;
+  transition-delay: 5.8s;
+  transform: scale(1.74, 1.74) rotateX(-928deg) rotateY(-1856deg) rotateZ(-2784deg); }
+
+#cube:hover > .plane:nth-child(2n + 59) {
+  transition: all 5.9s linear;
+  transition-delay: 5.9s;
+  transform: scale(1.77, 1.77) rotateX(-944deg) rotateY(-1888deg) rotateZ(-2832deg); }
+
+#cube:hover > .plane:nth-child(2n + 60) {
+  transition: all 6s linear;
+  transition-delay: 6s;
+  transform: scale(1.8, 1.8) rotateX(-960deg) rotateY(-1920deg) rotateZ(-2880deg); }
+
+#cube:hover > .plane:nth-child(2n + 61) {
+  transition: all 6.1s linear;
+  transition-delay: 6.1s;
+  transform: scale(1.83, 1.83) rotateX(-976deg) rotateY(-1952deg) rotateZ(-2928deg); }
+
+#cube:hover > .plane:nth-child(2n + 62) {
+  transition: all 6.2s linear;
+  transition-delay: 6.2s;
+  transform: scale(1.86, 1.86) rotateX(-992deg) rotateY(-1984deg) rotateZ(-2976deg); }
+
+/*# sourceMappingURL=logo.css.map */

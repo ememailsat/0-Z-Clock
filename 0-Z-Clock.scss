@@ -1,0 +1,112 @@
+
+   * {
+    box-sizing: border-box;
+   }
+   body {
+  background: #121212ff;
+  color: #efefef;
+
+  background: linear-gradient(45deg, black, red);
+}
+
+#timeKeeper {
+ font-family: monospace;
+ position: absolute;
+ top: 23px;
+ left: 23px;
+ transition: all 0.5s ease-in-out;
+  z-index: 999;
+}
+
+.describer {
+  position: relative;
+  top: 4px;
+font-style: italic;
+left: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: 1px solid;
+  width: 18px !important;
+  display: inline-block;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.describer-2nd {
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: lighter;
+  font-family: serif;
+  text-align: center;
+  line-height: 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 4px 2px 4px 2px;
+  width: 12px;
+}
+
+.value {
+  display: inline-block;
+  width: 20px;
+  border: 1px solid;
+  text-align: center;
+  height: 24px;
+  line-height: 20px;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+}
+
+.day-value {
+  position: absolute;
+  top: 56px;
+  left: -1px;
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+}
+
+.time-indicator {
+  position: absolute;
+  border: 1px solid;
+  width: 22px;
+  height: 20px;
+  line-height: 18px;
+  top: 26px;
+  left: -2px;
+  background: #6f0202;
+  color: #060606;
+}
+
+@keyframes lightUp {
+  0% {
+    background-color: #00000077;
+  }
+
+  100% {
+    background-color: #ffffffcc;
+  }
+}
+
+#logoAndHandsContainer {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+
+.year-value {
+  position: absolute;
+  top: 46px;
+  left: 9px;
+  display: block;
+  border: 1px solid;
+  transform: rotate(90deg);
+  padding: 0px 5px;
+  letter-spacing: 6px;
+  transform-origin: left;
+  box-sizing: border-box;
+  height: 20px;
+}

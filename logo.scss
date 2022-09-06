@@ -1,0 +1,53 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+ background: linear-gradient(45deg, black, red);
+}
+
+#dLogo {
+  position: absolute;
+  left: 412px;
+  top: 191px;
+  z-index: 999999999999;
+}
+
+#cube {
+position: absolute;
+transform-style: preserve-3d;
+width: 100px;
+height: 100px;
+top: 20%;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: all 55s ease-in-out;
+
+ .plane {
+  transition: all 5s ease-in-out;
+  background: rgba(170, 4, 4, 0.1);
+  perspective: 800px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  border-radius: 51%;
+ }
+}
+
+@for $a from 1 to 63 {
+ #cube > .plane:nth-child(2n + #{$a}) {
+  transition: all #{$a * 0.1}s linear;
+  transition-delay: #{$a*.1}s;
+  transform: scale(0.5, 0.5) rotateX($a * 4 + deg) rotateY($a * 8 + deg) rotateZ($a * 12 + deg);
+ }
+}
+
+@for $a from 1 to 63 {
+ #cube:hover > .plane:nth-child(2n + #{$a}) {
+  transition: all #{$a * 0.1}s linear;
+  transition-delay: #{$a*.1}s;
+  transform: scale($a * 0.03, $a * 0.03) rotateX($a * -16 + deg) rotateY($a * -32 + deg) rotateZ($a * -48 + deg);
+ }
+}
+
